@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f9fd">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Mono — браузер и пространство для работы, общения и творчества. Открой браузер, в котором инструменты действительно рядом.">
+  <meta property="og:title" content="Mono — больше, чем браузер">
+  <meta property="og:description" content="Один браузер. Больше возможностей. Знакомься с Mono и его инструментами.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/home.webp">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <title>Mono — больше, чем браузер</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="ic-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="ic-down" viewBox="0 0 24 24"><path d="m12 3 0 12m-5-5 5 5 5-5M5 19h14"/></symbol>
+    <symbol id="ic-play" viewBox="0 0 24 24"><path d="m9 6 9 6-9 6V6Z"/></symbol>
+    <symbol id="ic-moon" viewBox="0 0 24 24"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></symbol>
+    <symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="ic-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="ic-spark" viewBox="0 0 24 24"><path d="m12 2 2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1L12 2Z"/></symbol>
+    <symbol id="ic-lock" viewBox="0 0 24 24"><rect x="4.5" y="10" width="15" height="11" rx="3"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></symbol>
+    <symbol id="ic-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></symbol>
+    <symbol id="ic-note" viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5zM15 3v5h4M9 12h6m-6 4h6"/></symbol>
+    <symbol id="ic-chat" viewBox="0 0 24 24"><path d="M21 11a8.5 8.5 0 0 1-8.5 8.5H5l2-4A8.5 8.5 0 1 1 21 11Z"/></symbol>
+    <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></symbol>
+    <symbol id="ic-controller" viewBox="0 0 24 24"><path d="M7 9h10a4 4 0 0 1 4 3l1 5a3 3 0 0 1-5 3l-3-3h-4l-3 3a3 3 0 0 1-5-3l1-5a4 4 0 0 1 4-3Zm1 3v5m-2.5-2.5h5m6-1h.1m2 2h.1"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="ic-windows" viewBox="0 0 24 24"><path d="m3 5 8-1v8H3V5Zm10-1 8-1v9h-8V4ZM3 14h8v7l-8-1v-6Zm10 0h8v9l-8-1v-8Z"/></symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24"><path d="m12 2 8 3v6c0 5-3.2 8.7-8 11-4.8-2.3-8-6-8-11V5l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="ic-zap" viewBox="0 0 24 24"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></symbol>
+    <symbol id="ic-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M9 21h6m-3-4v4"/></symbol>
+    <symbol id="ic-external" viewBox="0 0 24 24"><path d="M13 4h7v7M20 4l-9 9M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></symbol>
+  </svg>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="wordmark" href="#top" aria-label="Mono — на главную">
+        <img src="assets/mono-logo.webp" width="36" height="36" alt="">
+        <span>mono<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#features">Возможности</a>
+        <a href="#preview">Интерфейс</a>
+        <a href="#philosophy">О браузере</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="theme-button" id="theme-toggle" aria-label="Переключить тему" title="Переключить тему">
+          <svg class="icon sun"><use href="#ic-sun"/></svg><svg class="icon moon"><use href="#ic-moon"/></svg>
+        </button>
+        <a class="button button-primary button-small" href="https://drive.google.com/uc?export=download&id=1FRpgb8LyMDJJYQCpDZv2T3NVTKGdXVTd" target="_blank" rel="noopener noreferrer">Скачать Mono <svg class="icon"><use href="#ic-arrow"/></svg></a>
+        <button type="button" class="mobile-menu-button" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Открыть меню"><svg class="icon"><use href="#ic-menu"/></svg></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" inert>
+      <a href="#features">Возможности</a><a href="#preview">Интерфейс</a><a href="#philosophy">О браузере</a><a href="#faq">Вопросы</a>
+      <a class="button button-primary" href="https://drive.google.com/uc?export=download&id=1FRpgb8LyMDJJYQCpDZv2T3NVTKGdXVTd" target="_blank" rel="noopener noreferrer">Скачать Mono <svg class="icon"><use href="#ic-arrow"/></svg></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-blur blur-one" aria-hidden="true"></div><div class="hero-blur blur-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="status-orb"></span> Знакомься с новым Mono</div>
+          <h1 id="hero-heading">Твой интернет.<br><span>Твои правила.</span></h1>
+          <p class="hero-description">Браузер, в котором всё на своём месте. Вкладки, заметки, игры и инструменты — в едином пространстве, созданном для тебя.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-lg" href="https://drive.google.com/uc?export=download&id=1FRpgb8LyMDJJYQCpDZv2T3NVTKGdXVTd" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#ic-down"/></svg> Скачать для Windows</a>
+            <a class="button button-outline button-lg" href="#preview">Посмотреть Mono <svg class="icon"><use href="#ic-arrow"/></svg></a>
+          </div>
+          <div class="hero-meta"><span class="os-badge"><svg class="icon"><use href="#ic-windows"/></svg> Windows 10 / 11</span><span class="meta-separator"></span><span>Независимый браузерный проект</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Предпросмотр интерфейса Mono Browser">
+          <div class="hero-halo"></div>
+          <div class="hero-browser browser-frame">
+            <div class="frame-top"><div class="window-dots"><i></i><i></i><i></i></div><div class="frame-title"><img src="assets/mono-logo.webp" alt=""> Mono Browser</div><div class="frame-live"><span></span> Preview</div></div>
+            <img src="assets/home.webp" class="hero-screen" alt="Главная страница Mono с вкладками, поиском и боковыми инструментами" loading="eager" decoding="async">
+          </div>
+          <div class="float-pill pill-top"><span class="mini-pill-icon"><svg class="icon"><use href="#ic-spark"/></svg></span><span><strong>Mono AI</strong><small>Помощник рядом</small></span></div>
+          <div class="float-pill pill-bottom"><span class="mini-pill-icon secondary"><svg class="icon"><use href="#ic-grid"/></svg></span><span><strong>Workspaces</strong><small>Всё в одном месте</small></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span class="hero-scroll-line"></span> Листай, чтобы узнать больше <svg class="icon"><use href="#ic-down"/></svg></div>
+    </section>
+
+    <section class="strip-section" aria-label="Инструменты Mono">
+      <div class="container strip-inner">
+        <span class="strip-caption">ВСЁ В ОДНОМ</span>
+        <span><svg class="icon"><use href="#ic-note"/></svg> Notes</span>
+        <span><svg class="icon"><use href="#ic-spark"/></svg> Mono AI</span>
+        <span><svg class="icon"><use href="#ic-shield"/></svg> Privacy</span>
+        <span><svg class="icon"><use href="#ic-controller"/></svg> Games</span>
+        <span><svg class="icon"><use href="#ic-chat"/></svg> Messenger</span>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-head fade-in"><div><div class="section-kicker">ВОЗМОЖНОСТИ</div><h2 id="features-heading">Один браузер.<br><span class="text-gradient">Целый мир внутри.</span></h2></div><p>Не нужно открывать десятки отдельных программ. Mono объединяет привычный веб и удобные инструменты в одном интерфейсе.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-workspace fade-in"><div class="feature-copy"><div class="feature-icon"><svg class="icon"><use href="#ic-grid"/></svg></div><h3>Твоё рабочее пространство</h3><p>Переключайся между инструментами, а не между приложениями. Работай в собственном ритме.</p><a class="inline-link" href="#preview" data-select-preview="workspace">Смотреть Workspaces <svg class="icon"><use href="#ic-arrow"/></svg></a></div><div class="feature-screen feature-screen-work"><img src="assets/workspace.webp" alt="Каталог игр в Workspaces Mono"></div></article>
+          <article class="feature-card feature-ai fade-in"><div class="feature-icon ai-icon"><svg class="icon"><use href="#ic-spark"/></svg></div><div class="ai-orbits" aria-hidden="true"><div class="ai-center"><img src="assets/mono-logo.webp" alt=""></div><span class="orbit orbit-1"></span><span class="orbit orbit-2"></span><span class="orbit orbit-3"></span></div><h3>Mono AI</h3><p>Встроенный помощник для простых вопросов, вычислений и повседневных задач.</p></article>
+          <article class="feature-card feature-privacy fade-in"><div class="feature-icon"><svg class="icon"><use href="#ic-shield"/></svg></div><div class="privacy-symbol"><div class="privacy-back"></div><svg class="icon"><use href="#ic-lock"/></svg><span class="privacy-signal signal-1"></span><span class="privacy-signal signal-2"></span></div><h3>Приватное пространство</h3><p>Защищённое файловое хранилище с PIN-кодом и настройками доступа.</p></article>
+          <article class="feature-card feature-notes fade-in"><div class="feature-copy"><div class="feature-icon"><svg class="icon"><use href="#ic-note"/></svg></div><h3>Идеи не должны теряться</h3><p>Создавай документы в Notes, форматируй текст, импортируй TXT и экспортируй результат.</p></div><div class="feature-screen feature-screen-notes"><img src="assets/notes.webp" alt="Редактор документов Mono Notes"></div></article>
+          <article class="feature-card feature-games fade-in"><div class="feature-copy"><div class="feature-icon games-icon"><svg class="icon"><use href="#ic-controller"/></svg></div><h3>Время для перерыва</h3><p>Семь мини-игр — прямо в браузере. От Змейки до Tower Defense.</p><a class="inline-link" href="#preview" data-select-preview="games">Посмотреть игры <svg class="icon"><use href="#ic-arrow"/></svg></a></div><div class="feature-games-screenshot"><img src="assets/games.webp" alt="Семь встроенных игр Mono"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preview-section" id="preview" aria-labelledby="preview-heading">
+      <div class="container">
+        <div class="preview-shell fade-in">
+          <div class="preview-head"><div><div class="section-kicker light-kicker">ПОСМОТРИ ПОБЛИЖЕ</div><h2 id="preview-heading">Пространство, которое<br>подстраивается <em>под тебя.</em></h2></div><p>Загляни в разные разделы Mono. Никаких вымышленных экранов — настоящие скриншоты проекта.</p></div>
+          <div class="preview-selector" role="tablist" aria-label="Примеры экранов Mono">
+            <button type="button" role="tab" data-preview="home" id="tab-home" aria-selected="true" aria-controls="preview-panel">Главная</button>
+            <button type="button" role="tab" data-preview="workspace" id="tab-workspace" aria-selected="false" aria-controls="preview-panel" tabindex="-1">Workspaces</button>
+            <button type="button" role="tab" data-preview="notes" id="tab-notes" aria-selected="false" aria-controls="preview-panel" tabindex="-1">Notes</button>
+            <button type="button" role="tab" data-preview="messenger" id="tab-messenger" aria-selected="false" aria-controls="preview-panel" tabindex="-1">Messenger</button>
+            <button type="button" role="tab" data-preview="performance" id="tab-performance" aria-selected="false" aria-controls="preview-panel" tabindex="-1">Performance</button>
+            <button type="button" role="tab" data-preview="customize" id="tab-customize" aria-selected="false" aria-controls="preview-panel" tabindex="-1">Customize</button>
+          </div>
+          <div class="preview-demo" role="tabpanel" id="preview-panel" aria-labelledby="tab-home" tabindex="0">
+            <div class="demo-browser-top"><div class="demo-dots"><span></span><span></span><span></span></div><div class="demo-url" id="demo-url"><svg class="icon"><use href="#ic-lock"/></svg> mono://home</div><div class="demo-window-icons">— □ ×</div></div>
+            <img id="preview-image" src="assets/home.webp" alt="Главный экран Mono Browser" decoding="async">
+          </div>
+          <div class="preview-footer"><div><span class="live-dot"></span><strong id="preview-label">Главная</strong><span class="preview-subtitle" id="preview-subtitle">Чистое пространство для твоего старта.</span></div><div class="preview-counter"><span id="preview-index">01</span> / 06</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section philosophy-section" id="philosophy" aria-labelledby="philosophy-heading">
+      <div class="container philosophy-layout">
+        <div class="philosophy-copy fade-in"><div class="section-kicker">ИДЕЯ MONO</div><h2 id="philosophy-heading">Меньше шума.<br><span class="text-gradient">Больше свободы.</span></h2><p>Mono создаётся вокруг одной мысли: браузер должен помогать тебе сосредоточиться, а не отвлекать. Простой внешний вид, привычная логика и инструменты, до которых один клик.</p><div class="philosophy-points"><div><span class="philosophy-num">01</span><div><h3>Свой стиль</h3><p>Темы, цвета, фон и компоновка под твой вкус.</p></div></div><div><span class="philosophy-num">02</span><div><h3>Под рукой</h3><p>Заметки, перевод, медиа, закладки и многое другое.</p></div></div><div><span class="philosophy-num">03</span><div><h3>Без лишнего</h3><p>Аккуратный интерфейс и удобная навигация.</p></div></div></div></div>
+        <div class="customize-visual fade-in"><div class="customize-light"></div><div class="customize-window"><img src="assets/customize.webp" alt="Настройки оформления Mono Customize"></div><div class="customize-color-row" aria-hidden="true"><span style="--swatch:#716bff"></span><span style="--swatch:#37aeea"></span><span style="--swatch:#ed70bc"></span><span style="--swatch:#3acfb3"></span><span style="--swatch:#171f39"></span></div></div>
+      </div>
+    </section>
+
+    <section class="section small-features-section" aria-label="Дополнительные возможности"><div class="container"><div class="small-features-grid"><article class="small-feature fade-in"><div class="small-icon"><svg class="icon"><use href="#ic-zap"/></svg></div><h3>Performance</h3><p>Проверяй параметры интернет-соединения в самом Mono.</p></article><article class="small-feature fade-in"><div class="small-icon"><svg class="icon"><use href="#ic-globe"/></svg></div><h3>Перевод</h3><p>Работай с иностранными текстами, не покидая браузер.</p></article><article class="small-feature fade-in"><div class="small-icon"><svg class="icon"><use href="#ic-chat"/></svg></div><h3>Messenger</h3><p>Общение, группы и файлы в экспериментальном встроенном мессенджере.</p></article><article class="small-feature fade-in"><div class="small-icon"><svg class="icon"><use href="#ic-monitor"/></svg></div><h3>Split View</h3><p>Две страницы рядом, когда одной вкладки недостаточно.</p></article></div></div></section>
+
+    <section class="section download-section" id="download"><div class="container"><div class="download-panel fade-in"><div class="download-glow glow-left"></div><div class="download-glow glow-right"></div><div class="download-inner"><div class="download-mark"><img src="assets/mono-logo.webp" alt=""></div><div class="section-kicker">ТВОЙ БРАУЗЕР, ТВОЙ ВЫБОР</div><h2>Интернет начинается<br><span>с Mono.</span></h2><p>Попробуй другой подход к привычному браузеру.</p><a class="button download-button" href="https://drive.google.com/uc?export=download&id=1FRpgb8LyMDJJYQCpDZv2T3NVTKGdXVTd" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#ic-windows"/></svg> Скачать Mono для Windows <svg class="icon"><use href="#ic-arrow"/></svg></a><div class="download-note">Windows 10 / 11 <span>·</span> Скачать с Google Drive</div></div></div></div></section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-heading"><div class="container faq-layout"><div class="faq-aside fade-in"><div class="section-kicker">FAQ</div><h2 id="faq-heading">Остались<br>вопросы?</h2><p>Коротко о Mono — без сложных формулировок.</p></div><div class="faq-list fade-in">
+      <details><summary>Что такое Mono?<span class="faq-plus" aria-hidden="true"></span></summary><p>Mono — независимый проект десктопного браузера на Electron и Chromium. Помимо просмотра сайтов, он объединяет полезные инструменты в одном интерфейсе.</p></details>
+      <details><summary>Какие системы поддерживаются?<span class="faq-plus" aria-hidden="true"></span></summary><p>Проект ориентирован на Windows 10 и Windows 11. Возможности и совместимость могут меняться по мере разработки.</p></details>
+      <details><summary>Работают ли инструменты без интернета?<span class="faq-plus" aria-hidden="true"></span></summary><p>Часть инструментов, например локальные заметки и встроенные игры, может работать без интернета. Веб-сайты, сетевые проверки, обмен сообщениями и другие онлайн-функции требуют соединения.</p></details>
+      <details><summary>Где скачать Mono?<span class="faq-plus" aria-hidden="true"></span></summary><p>Нажми «Скачать Mono» — установщик доступен через Google Drive. Google может запросить подтверждение загрузки файла.</p></details>
+      <details><summary>Можно ли настроить интерфейс под себя?<span class="faq-plus" aria-hidden="true"></span></summary><p>Да. В Customize можно выбирать оформление, темы, акцентные цвета и другие параметры интерфейса.</p></details>
+    </div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><div><a href="#top" class="wordmark footer-wordmark"><img src="assets/mono-logo.webp" width="34" height="34" alt=""><span>mono<span class="brand-dot">.</span></span></a><p>Браузер, в котором больше возможностей.<br>Независимый проект, созданный с вниманием к деталям.</p></div><div class="footer-nav"><div><strong>Mono</strong><a href="#features">Возможности</a><a href="#preview">Интерфейс</a><a href="#download">Скачать</a></div><div><strong>Информация</strong><a href="#philosophy">О проекте</a><a href="#faq">Вопросы</a><a href="#top">Наверх ↑</a></div></div></div><div class="container footer-bottom"><span>© <span id="footer-year">2026</span> Mono Project</span><span>Сделано с любовью к хорошему интерфейсу.</span></div></footer>
+
+  <div class="dialog-backdrop" id="download-dialog" hidden><div class="download-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-description"><button type="button" class="dialog-close" id="dialog-close" aria-label="Закрыть окно"><svg class="icon"><use href="#ic-x"/></svg></button><div class="dialog-icon"><img src="assets/mono-logo.webp" alt=""></div><h2 id="dialog-title">Открыть загрузку Mono</h2><p id="dialog-description">Для получения установщика перейди по ссылке скачивания Mono.</p><button type="button" class="button button-primary dialog-done" id="dialog-done">Понятно <svg class="icon"><use href="#ic-check"/></svg></button></div></div>
+  <noscript><div class="no-script">Для просмотра интерактивной демонстрации и переключения темы включите JavaScript. Остальные разделы сайта доступны без него.</div></noscript>
+</body>
+</html>
